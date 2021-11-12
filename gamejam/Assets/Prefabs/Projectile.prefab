@@ -113,7 +113,11 @@ MonoBehaviour:
   projectileRB: {fileID: 0}
   player: {fileID: 0}
   enemy: {fileID: 0}
+<<<<<<< HEAD
   speed: 10
+=======
+  speed: 7
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
   lifeTime: 0
   damage: 0
   damagePlayer: 0

@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Project
   m_RootView: {fileID: 9}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -75,6 +75,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   controlID: 100
 =======
@@ -87,6 +88,9 @@ MonoBehaviour:
 =======
   controlID: 117
 >>>>>>> Item
+=======
+  controlID: 92
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,9 +140,10 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     width: 395
     height: 947
-  m_MinSize: {x: 232, y: 471}
-  m_MaxSize: {x: 10002, y: 14021}
+  m_MinSize: {x: 232, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 121
 =======
 <<<<<<< HEAD
@@ -162,6 +167,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Item
+=======
+  controlID: 17
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -213,9 +221,10 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     width: 1920
     height: 947
-  m_MinSize: {x: 708, y: 471}
-  m_MaxSize: {x: 18003, y: 14021}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 99
 =======
 <<<<<<< HEAD
@@ -239,6 +248,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Item
+=======
+  controlID: 91
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -270,12 +282,17 @@ MonoBehaviour:
 >>>>>>> Stashed changes
     width: 276
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 <<<<<<< Updated upstream
 =======
 >>>>>>> main
 >>>>>>> Stashed changes
+=======
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -418,6 +435,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Folders: []
 =======
@@ -431,6 +449,10 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
 >>>>>>> Item
+=======
+    m_Folders:
+    - Assets/Prefabs
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -445,6 +467,7 @@ MonoBehaviour:
     m_SelectedIDs: 02510000
     m_LastClickedID: 20738
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_ExpandedIDs: 00000000803d0000823d0000843d0000863d0000
 =======
@@ -457,6 +480,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000dc3d0000de3d0000e03d0000e23d0000
 >>>>>>> Item
+=======
+    m_ExpandedIDs: 00000000b43d0000b63d0000b83d0000ba3d0000
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -485,6 +511,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_ExpandedIDs: ffffffff00000000803d0000823d0000843d0000863d0000
 =======
@@ -497,20 +524,23 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: e8d1fdffffffffff00000000dc3d0000de3d0000e03d0000e23d0000
 >>>>>>> Item
+=======
+    m_ExpandedIDs: ffffffff00000000b43d0000b63d0000b83d0000ba3d0000
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: PlayerMovement
+      m_OriginalName: PlayerMovement
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 4258
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -584,7 +614,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 349
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -618,6 +648,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       m_SelectedIDs: 043d0000
       m_LastClickedID: 15620
@@ -638,20 +669,25 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 22fbffff
 >>>>>>> Item
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: bed9ffff3cfbffff603d0000
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Projectile(Clone)
+        m_OriginalName: Projectile(Clone)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -24604
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -697,9 +733,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.8700266, y: 3.08433, z: 9.686293}
+    m_Target: {x: 1.054558, y: 2.0155432, z: 5.786223}
     speed: 2
-    m_Value: {x: 1.8700266, y: 3.08433, z: 9.686293}
+    m_Value: {x: 1.054558, y: 2.0155432, z: 5.786223}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -747,17 +783,22 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Target: {x: 0.05664379, y: 0.942253, z: -0.2550229, w: 0.2094784}
 =======
 <<<<<<< HEAD
     m_Target: {x: 0.048360087, y: 0.534415, z: -0.030690795, w: 0.8432634}
 >>>>>>> Stashed changes
+=======
+    m_Target: {x: 0.060290013, y: -0.71988875, z: 0.06299445, w: 0.68856084}
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
     speed: 2
-    m_Value: {x: 0.056644723, y: 0.9422685, z: -0.25502712, w: 0.20948184}
+    m_Value: {x: 0.05925827, y: -0.71999717, z: 0.061915856, w: 0.68866456}
   m_Size:
-    m_Target: 9.113265
+    m_Target: 10.327703
     speed: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Value: 9.113265
 =======
@@ -781,6 +822,9 @@ MonoBehaviour:
     speed: 2
     m_Value: 1.7379864
 >>>>>>> Item
+=======
+    m_Value: 10.814349
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
   m_Ortho:
     m_Target: 1
     speed: 2
