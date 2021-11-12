@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 5404193454588238568}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,3 +247,9 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 64
+  dashSpeed: 100
+  dashCooldown: 0
+  canSlow: 0
+  backPack: 0
+  healthTimer: 300
+  powerTimer: 0

@@ -27,14 +27,14 @@ public class Projectile : MonoBehaviour
     {
         // on hit effect ( player ) gets damaged.
         // if enemy can shoot, projectile will move towards player, if hits reduce hp/timer by 2
-
-            projectileRB.velocity = transform.forward * speed;
+            //projectileRB.velocity = transform.forward * speed;
             lifeTime -= Time.deltaTime;
+        transform.Translate(Vector3.back * speed * Time.deltaTime);
+    }
 
-
-
-
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
     }
 
 }   

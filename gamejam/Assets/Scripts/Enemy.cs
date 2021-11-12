@@ -36,10 +36,10 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         //Rotate towards player, then shoot
-        Vector3 pos = player.transform.position + new Vector3(0, 1, 0);
+        Vector3 pos = player.transform.position + new Vector3(0, 0.5f, 0);
         transform.LookAt(pos, Vector3.up);
         //transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
-        if (Vector3.Distance(transform.position, player.transform.position) < 5.0f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 15.0f)
         {
             Shoot();
         }
@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
         if (canShoot)
         {
             //instantiate a projectile 
-            Instantiate(bullet, fireD.position, fireD.rotation);
+            Instantiate(bullet, fireD.position + new Vector3(0,0,-2.0f), bullet.transform.rotation);
             Debug.Log("Shooting!");
             canShoot = false;
         }
