@@ -113,15 +113,7 @@ MonoBehaviour:
   projectileRB: {fileID: 0}
   player: {fileID: 0}
   enemy: {fileID: 0}
-<<<<<<< Updated upstream
-  speed: 20
-=======
-<<<<<<< HEAD
   speed: 10
-=======
-  speed: 20
->>>>>>> main
->>>>>>> Stashed changes
   lifeTime: 0
   damage: 0
   damagePlayer: 0
