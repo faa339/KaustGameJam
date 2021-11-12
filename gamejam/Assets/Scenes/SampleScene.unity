@@ -167,7 +167,7 @@ MonoBehaviour:
   canSlow: 0
   backPack: 0
   healthTimer: 300
-  powerTimer: 0
+  powerTimer: 3
 --- !u!54 &234324157
 Rigidbody:
   m_ObjectHideFlags: 0

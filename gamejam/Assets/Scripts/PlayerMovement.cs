@@ -38,16 +38,21 @@ public class PlayerMovement : MonoBehaviour
     public float healthTimer = 300f;
 
     [SerializeField]
-    public float powerTimer = 0f;
+    public float powerTimer = 6f;
 
     private AudioClip timeTick;
 
+    private float fixedDeltaTime;
+
+    private void Awake()
+    {
+        this.fixedDeltaTime = Time.fixedDeltaTime;
+    }
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody>();
 
-        //    cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -55,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+
 
         player.velocity = new Vector3(horizontalInput * playerSpeed, player.velocity.y, verticalInput * playerSpeed);
 
@@ -78,34 +84,42 @@ public class PlayerMovement : MonoBehaviour
         {
             healthTimer -= Time.deltaTime;
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl) && powerTimer>0)
+        {
+            slowTime();
+        }
+        if (Time.timeScale < 1)
+        {
+            powerTimer -= Time.deltaTime;
+        }
+        if (powerTimer <= 0)
+        {
+            Time.timeScale = 1f;
+        }
+
     }
 
-    //private void OnGUI()
-    //{
-    //    Vector3 point = new Vector3();
-    //    Event currentEvent = Event.current;
-    //    Vector2 mousePos = new Vector2();
-
-    //    mousePos.x = currentEvent.mousePosition.x;
-    //    mousePos.y = currentEvent.mousePosition.y;
-
-    //    point = cam.ScreenToViewportPoint(new Vector3(mousePos.x, mousePos.y, cam.nearClipPlane));
-
-    //    GUILayout.BeginArea(new Rect(20, 20, 250, 120));
-    //    GUILayout.Label("Screen pixels: " + cam.pixelWidth + ":" + cam.pixelHeight);
-    //    GUILayout.Label("Mouse position: " + mousePos);
-    //    GUILayout.Label("World position: " + point.ToString("F3"));
-    //    GUILayout.EndArea();
-    //}
+    private void OnGUI()
+    {
+        GUI.Box(new Rect(20, 20, 250, 120), "Player Stats");
+        GUI.TextArea(new Rect(25, 50, 220, 20), "Time left: " + healthTimer);
+        GUI.TextArea(new Rect(25, 80, 220, 20), "Slow Time Timer: " + powerTimer);
+    }
 
     bool IsGrounded()
     {
         return Physics.CheckSphere(groundCheck.position, .1f, ground);
     }
 
+    void slowTime()
+    {
+        Time.timeScale = 0.5f;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Projectile")
         {
             healthTimer -= 2.0f;
         }
@@ -119,4 +133,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
+
+
 

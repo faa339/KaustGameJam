@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
         if (canShoot)
         {
             //instantiate a projectile 
-            Instantiate(bullet, fireD.position + new Vector3(0,0,-2.0f), bullet.transform.rotation);
+            Instantiate(bullet, fireD.position, fireD.rotation);
             Debug.Log("Shooting!");
             canShoot = false;
         }
