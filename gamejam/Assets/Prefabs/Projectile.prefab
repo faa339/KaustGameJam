@@ -114,7 +114,11 @@ MonoBehaviour:
   player: {fileID: 0}
   enemy: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   speed: 10
+=======
+  speed: 7
+>>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
 =======
   speed: 7
 >>>>>>> parent of 1b31df6 (Timeslow + Dash setup)
