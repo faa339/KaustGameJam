@@ -508,10 +508,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemRb: {fileID: 1329142587}
-  itemPs: {fileID: 1329142582}
   player: {fileID: 234324161}
+  itemPs: {fileID: 1329142582}
   pickUpRange: 10
   equipped: 0
+  itemS: {fileID: 0}
 --- !u!1 &1950498417
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +615,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1197381713, guid: e28e4952fd675724d969c047a20fe117, type: 3}
+      propertyPath: m_Radius
+      value: 750
+      objectReference: {fileID: 0}
     - target: {fileID: 1449723046947987778, guid: e28e4952fd675724d969c047a20fe117, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -624,15 +629,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4333083713905298843, guid: e28e4952fd675724d969c047a20fe117, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.250955
+      value: 1.76
       objectReference: {fileID: 0}
     - target: {fileID: 4333083713905298843, guid: e28e4952fd675724d969c047a20fe117, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.62
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 4333083713905298843, guid: e28e4952fd675724d969c047a20fe117, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.05
+      value: 19.07
       objectReference: {fileID: 0}
     - target: {fileID: 4333083713905298843, guid: e28e4952fd675724d969c047a20fe117, type: 3}
       propertyPath: m_LocalRotation.w
@@ -662,10 +667,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4704878034868243593, guid: e28e4952fd675724d969c047a20fe117, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 1640662957161288910, guid: a648f3194cf03514794fa61152ecf9ff, type: 3}
     - target: {fileID: 4704878034868243593, guid: e28e4952fd675724d969c047a20fe117, type: 3}
       propertyPath: player
       value: 
