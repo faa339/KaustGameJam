@@ -45,8 +45,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    GameObject Item;
-
     private AudioClip timeTick;
 
     private float fixedDeltaTime;
@@ -78,8 +76,8 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        float tiltLeft = verticalInput * tiltAngle;
-        float tiltRight = horizontalInput * tiltAngle;
+        float tiltRight = verticalInput * tiltAngle;
+        float tiltLeft = -verticalInput * tiltAngle;
 
         float powerT = powerTimer;
 
@@ -184,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
         //picking up Item
         else if (collision.gameObject.tag == "Item")
         {
-            Item.SetActive(false);
+            collision.gameObject.SetActive(false);
             powerTimer += 6.0f;
         }
     }
