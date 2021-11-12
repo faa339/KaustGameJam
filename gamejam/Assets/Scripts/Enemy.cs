@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public AudioClip enemySound;
     public GameObject bullet;
     public GameObject player;
+    public Transform fireD; //where the projectile will come out
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +60,7 @@ public class Enemy : MonoBehaviour
             //Prevent instant shooting
             newEnemy.canShoot = false;
             newEnemy.shootDelay = 1.99f; 
-            //And dont forget to reduce player time left
+            //And dont forget to reduce player time left < time
         }
         //Bullet collision with enemy will do nothing, safety feature lol
     }
@@ -70,6 +71,7 @@ public class Enemy : MonoBehaviour
         if (canShoot)
         {
             //instantiate a projectile 
+            Instantiate(bullet, fireD.position, fireD.rotation);
             Debug.Log("Shooting!");
             canShoot = false;
         }
